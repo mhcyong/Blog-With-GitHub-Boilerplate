@@ -23,19 +23,20 @@
         }
     </script>
     
-<title>标签: Design - 人事不干人事</title>
+<title>获取QQ头像地址，并且不暴露QQ号 - 人事不干人事</title>
 <meta name="author" content="小否先生" />
-<meta name="description" content="只坚持一种正义。我的正义。" />
-<meta property="og:title" content="标签: Design - 人事不干人事" />
-<meta property="og:description" content="只坚持一种正义。我的正义。" />
+<meta name="description" content="因为最近回归原生评论，所以评论头像如果单纯的引用gravatar头像，会有一部分low bee们头像会变成gravatar默认头像，为了解决这个问题，我想对于qq号@qq.com这样的邮箱地址就行个处理来提取QQ头像，然后问题是怎么获取QQ头像地址。" />
+<meta property="og:title" content="获取QQ头像地址，并且不暴露QQ号 - 人事不干人事" />
+<meta property="og:description" content="因为最近回归原生评论，所以评论头像如果单纯的引用gravatar头像，会有一部分low bee们头像会变成gravatar默认头像，为了解决这个问题，我想对于qq号@qq.com这样的邮箱地址就行个处理来提取QQ头像，然后问题是怎么获取QQ头像地址。" />
 <meta property="og:site_name" content="人事不干人事" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/tag/Design/" />
-<meta property="og:image" content="人事不干人事" />
-<meta name="twitter:title" content="标签: Design - 人事不干人事" />
-<meta name="twitter:description" content="只坚持一种正义。我的正义。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/archives/get_qq_avatar/" />
+<meta property="og:image" content="" />
+<meta property="article:published_time" content="2020-01-12T16:50:00-00.00" />
+<meta name="twitter:title" content="获取QQ头像地址，并且不暴露QQ号 - 人事不干人事" />
+<meta name="twitter:description" content="因为最近回归原生评论，所以评论头像如果单纯的引用gravatar头像，会有一部分low bee们头像会变成gravatar默认头像，为了解决这个问题，我想对于qq号@qq.com这样的邮箱地址就行个处理来提取QQ头像，然后问题是怎么获取QQ头像地址。" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/mhcyong/Blog-With-GitHub-Boilerplate@gh-pages/logo.png" />
+<meta name="twitter:image" content="" />
 
 
     
@@ -63,27 +64,75 @@
             <div class="wrapper">
                 
 <main>    
-    
+    <section class="ga-section ga-content">
+        <article class="yue">
+            <h1 class="ga-post_title">获取QQ头像地址，并且不暴露QQ号</h1>
+            <span class="ga-post_meta ga-mono">
+                <span>小否先生</span>
+                <time>
+                    2020-01-12
+                </time>
+                
+                in <a no-style class="category" href="/category/PHP代码/">
+                    PHP代码
+                </a>
+                
+                
+            </span>
+            <div class="ga-content_body">
+                <div class="notice">因为最近回归原生评论，所以评论头像如果单纯的引用gravatar头像，会有一部分low bee们头像会变成gravatar默认头像，为了解决这个问题，我想对于qq号@qq.com这样的邮箱地址就行个处理来提取QQ头像，然后问题是怎么获取QQ头像地址。</div><h2>尝试</h2>
+<p>最初想到获取QQ头像地址就是下面这样</p>
 
-<section id="ga-archive_list" class="ga-section" data-title="#Design">
-    <ul>
-        
-        <li>
-            <h1><a target="_self" class="ga-highlight" href="/archives/typography/">Hello World!</a></h1>
-            <time class="ga-mono" datetime="2019-12-18T16:50:00-00.00">
-                2019-12-18
-            </time>
-        </li>
-        
-    </ul>
+<pre><code>https://q.qlogo.cn/g?b=qq&amp;nk=QQ号码&amp;s=100</code></pre>
+<p>当随之而来的问题就是暴露了别人的QQ号码，这点对于保护他人隐私上来说不太好。<br>
+于是想到了这样的QQ头像地址</p>
+
+<pre><code>https://q1.qlogo.cn/g?b=qq&amp;k=0n5AZ9Ne4h3em8iboKu3sHg&amp;s=100</code></pre>
+<p>上面的地址，中没有QQ号，却获取了某人的qq头像，里面的重要参数就是K的值，那么如何获取K值呢？</p>
+<h2>解决</h2>
+
+<pre><code>$qq = '你的扣扣号码';
+$geturl = 'http://ptlogin2.qq.com/getface?&amp;imgtype=1&amp;uin='.$qq;
+$qquser = file_get_contents($geturl);
+$str1 = explode('&amp;k=', $qquser);
+$str2 = explode('&amp;s=', $str1[1]);
+$k = $str2[0];
+$qqimg = 'https://q1.qlogo.cn/g?b=qq&amp;k='.$k.'&amp;s=100';
+echo $qqimg</code></pre>
+
+            </div>
+        </article>
+        <div id="ga-tags">
+    
+    <span class="ga-tag">
+        <a class="ga-highlight" href="/tag/PHP/">#PHP</a>
+    </span>
+    
+    <span class="ga-tag">
+        <a class="ga-highlight" href="/tag/QQ/">#QQ</a>
+    </span>
+    
+</div>
+    </section>
+
+    
+<section id="ga-content_pager">
+
+    <div class="next">
+        <h3>没有了</h3>
+        <p class="yue">这是最新的文章</p>
+    </div>
+
+
+    <div class="prev">
+        <a class="ga-highlight" href="/archives/typography/">Hello World!</a>
+        <p class="yue">这是一篇示例文章，在这里你可以看到常用页面元素的显示效果。</p>
+    </div>
+
 </section>
 
-<section class="ga-section ga-mono" id="ga-pager">
-    
-    <span>Page 1 of 1</span>
-    
-</section>
 
+    
 
 </main>
 

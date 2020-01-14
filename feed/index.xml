@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>人事不干人事</title><link>/</link><description>只坚持一种正义。我的正义。</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/mhcyong/Blog-With-GitHub-Boilerplate@gh-pages/logo.png</url><title>人事不干人事</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Tue, 14 Jan 2020 08:56:19 +0806</lastBuildDate><pubDate>Tue, 14 Jan 2020 08:56:19 +0806</pubDate><item><title>Hello World!</title><link>/archives/typography/</link><description>&lt;div class="notice"&gt;这是一篇示例文章，在这里你可以看到常用页面元素的显示效果，同时也是 Markdown 语法的参考文章。保留或者删除本文，开始自己的创作吧！&lt;/div&gt;&lt;h2&gt;L2 Heading&lt;/h2&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>人事不干人事</title><link>/</link><description>只坚持一种正义。我的正义。</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/mhcyong/Blog-With-GitHub-Boilerplate@gh-pages/logo.png</url><title>人事不干人事</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Tue, 14 Jan 2020 08:57:58 +0806</lastBuildDate><pubDate>Tue, 14 Jan 2020 08:57:58 +0806</pubDate><item><title>Hello World!</title><link>/archives/typography/</link><description>&lt;div class="notice"&gt;这是一篇示例文章，在这里你可以看到常用页面元素的显示效果，同时也是 Markdown 语法的参考文章。保留或者删除本文，开始自己的创作吧！&lt;/div&gt;&lt;h2&gt;L2 Heading&lt;/h2&gt;
 &lt;h3&gt;L3 Heading&lt;/h3&gt;
 &lt;h4&gt;L4 Heading&lt;/h4&gt;
 &lt;h5&gt;L5 Heading&lt;/h5&gt;
@@ -78,4 +78,23 @@
 &lt;/table&gt;
 &lt;h2&gt;Link Card&lt;/h2&gt;
 &lt;div class="links"&gt;
-&lt;a style="display:block" target="_blank" href="https://www.imalan.cn" class="board-item"&gt;                 &lt;div class="board-thumb"&gt;&lt;img src="https://secure.gravatar.com/avatar/1741a6eef5c824899e347e4afcbaa75d?s=200&amp;r=G&amp;d="&gt;&lt;/div&gt;                 &lt;div class="board-title"&gt;AlanDecode&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;hr&gt;&lt;div class="footnotes"&gt;&lt;ol&gt;&lt;li id="fn_1"&gt;Home page for AlanDecode &lt;a no-style href="#fn_ref_1"&gt;↩&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</description><author>pangsuan@qq.com (AlanDecode)</author><guid isPermaLink="true">/archives/typography/</guid><pubDate>Wed, 18 Dec 2019 16:50:00 +0806</pubDate></item></channel></rss>
+&lt;a style="display:block" target="_blank" href="https://www.imalan.cn" class="board-item"&gt;                 &lt;div class="board-thumb"&gt;&lt;img src="https://secure.gravatar.com/avatar/1741a6eef5c824899e347e4afcbaa75d?s=200&amp;r=G&amp;d="&gt;&lt;/div&gt;                 &lt;div class="board-title"&gt;AlanDecode&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;hr&gt;&lt;div class="footnotes"&gt;&lt;ol&gt;&lt;li id="fn_1"&gt;Home page for AlanDecode &lt;a no-style href="#fn_ref_1"&gt;↩&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</description><author>pangsuan@qq.com (AlanDecode)</author><guid isPermaLink="true">/archives/typography/</guid><pubDate>Wed, 18 Dec 2019 16:50:00 +0806</pubDate></item><item><title>获取QQ头像地址，并且不暴露QQ号</title><link>/archives/get_qq_avatar/</link><description>&lt;div class="notice"&gt;因为最近回归原生评论，所以评论头像如果单纯的引用gravatar头像，会有一部分low bee们头像会变成gravatar默认头像，为了解决这个问题，我想对于qq号@qq.com这样的邮箱地址就行个处理来提取QQ头像，然后问题是怎么获取QQ头像地址。&lt;/div&gt;&lt;h2&gt;尝试&lt;/h2&gt;
+&lt;p&gt;最初想到获取QQ头像地址就是下面这样&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;https://q.qlogo.cn/g?b=qq&amp;amp;nk=QQ号码&amp;amp;s=100&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;当随之而来的问题就是暴露了别人的QQ号码，这点对于保护他人隐私上来说不太好。&lt;br&gt;
+于是想到了这样的QQ头像地址&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;https://q1.qlogo.cn/g?b=qq&amp;amp;k=0n5AZ9Ne4h3em8iboKu3sHg&amp;amp;s=100&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;上面的地址，中没有QQ号，却获取了某人的qq头像，里面的重要参数就是K的值，那么如何获取K值呢？&lt;/p&gt;
+&lt;h2&gt;解决&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;$qq = '你的扣扣号码';
+$geturl = 'http://ptlogin2.qq.com/getface?&amp;amp;imgtype=1&amp;amp;uin='.$qq;
+$qquser = file_get_contents($geturl);
+$str1 = explode('&amp;amp;k=', $qquser);
+$str2 = explode('&amp;amp;s=', $str1[1]);
+$k = $str2[0];
+$qqimg = 'https://q1.qlogo.cn/g?b=qq&amp;amp;k='.$k.'&amp;amp;s=100';
+echo $qqimg&lt;/code&gt;&lt;/pre&gt;
+</description><author>pangsuan@qq.com (小否先生)</author><guid isPermaLink="true">/archives/get_qq_avatar/</guid><pubDate>Sun, 12 Jan 2020 16:50:00 +0806</pubDate></item></channel></rss>
