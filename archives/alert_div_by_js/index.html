@@ -23,19 +23,20 @@
         }
     </script>
     
-<title>标签: PHP - 人事不干人事</title>
+<title>弹出DIV层自适应居中显示 - 人事不干人事</title>
 <meta name="author" content="小否先生" />
-<meta name="description" content="只坚持一种正义。我的正义。" />
-<meta property="og:title" content="标签: PHP - 人事不干人事" />
-<meta property="og:description" content="只坚持一种正义。我的正义。" />
+<meta name="description" content="弹出DIV层自适应居中显示-窗口特效-网页特效" />
+<meta property="og:title" content="弹出DIV层自适应居中显示 - 人事不干人事" />
+<meta property="og:description" content="弹出DIV层自适应居中显示-窗口特效-网页特效" />
 <meta property="og:site_name" content="人事不干人事" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/tag/PHP/" />
-<meta property="og:image" content="人事不干人事" />
-<meta name="twitter:title" content="标签: PHP - 人事不干人事" />
-<meta name="twitter:description" content="只坚持一种正义。我的正义。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/archives/alert_div_by_js/" />
+<meta property="og:image" content="" />
+<meta property="article:published_time" content="2020-01-12T17:50:00-00.00" />
+<meta name="twitter:title" content="弹出DIV层自适应居中显示 - 人事不干人事" />
+<meta name="twitter:description" content="弹出DIV层自适应居中显示-窗口特效-网页特效" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/mhcyong/Blog-With-GitHub-Boilerplate@gh-pages/logo.png" />
+<meta name="twitter:image" content="" />
 
 
     
@@ -63,27 +64,101 @@
             <div class="wrapper">
                 
 <main>    
-    
+    <section class="ga-section ga-content">
+        <article class="yue">
+            <h1 class="ga-post_title">弹出DIV层自适应居中显示</h1>
+            <span class="ga-post_meta ga-mono">
+                <span>小否先生</span>
+                <time>
+                    2020-01-12
+                </time>
+                
+                in <a no-style class="category" href="/category/JS代码/">
+                    JS代码
+                </a>
+                
+                
+            </span>
+            <div class="ga-content_body">
+                <div class="notice">弹出DIV层自适应居中显示-窗口特效-网页特效。</div>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;弹出DIV层自适应居中显示-窗口特效-网页特效-站长新动力-msxindl.com&lt;/title&gt;
+&lt;meta http-equiv="content-type" content="text/html;charset=gb2312" /&gt;
+&lt;style type="text/css"&gt;
+.opendiv{z-index:100;overflow:auto;position:absolute;padding:1px;border:1px solid #888;background:#fff;border-radius:5px;visibility:hidden;}
+#bgdiv{z-index:99;width:100%;height:100%;position:absolute;top:0;left:0;filter:alpha(opacity=30);-moz-opacity:0.3;opacity:0.3;;visibility:hidden;background:#000;}
+&lt;/style&gt;
+&lt;script type="text/javascript"&gt;
+function $(id){return document.getElementById(id);}
+function openDiv(obj){
+    if(!$(obj)) return false;
+    var b = $('bgdiv');
+    var d = $(obj);
+    b.style.visibility='visible';
+    d.style.visibility='visible';
+    var wd=window.top.document.documentElement.clientWidth-d.offsetWidth;
+    var ht=window.top.document.documentElement.clientHeight-d.offsetHeight;
+    d.style.left=(wd/2)+'px';
+    d.style.top=(ht/2)+'px';
+    window.onresize=function(){openDiv(obj);};
+    b.onclick=function(){closeDiv(obj);window.onresize=null;};  //点击背景关闭弹出层
+}
+//关闭弹出层
+function closeDiv(obj){
+    var b = $('bgdiv');
+    var d = $(obj);
+    b.style.visibility='hidden';
+    d.style.visibility='hidden';
+}
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;input type="button" onclick="openDiv('div1')" value="点击弹出层1" /&gt;
+&lt;div id="div1" class="opendiv"&gt;
+    弹出DIV层居中显示，自适应弹出层的高度和宽度，窗口大小改变时也能自适应保持居中&lt;br /&gt;
+    弹出DIV层居中显示，自适应弹出层的高度和宽度，窗口大小改变时也能自适应保持居中&lt;br /&gt;
+    弹出DIV层居中显示，自适应弹出层的高度和宽度，窗口大小改变时也能自适应保持居中&lt;br /&gt;
+    弹出DIV层居中显示，自适应弹出层的高度和宽度，窗口大小改变时也能自适应保持居中&lt;br /&gt;
+&lt;/div&gt;
+&lt;div id="bgdiv"&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
 
-<section id="ga-archive_list" class="ga-section" data-title="#PHP">
-    <ul>
-        
-        <li>
-            <h1><a target="_self" class="ga-highlight" href="/archives/get_qq_avatar/">获取QQ头像地址，并且不暴露QQ号</a></h1>
-            <time class="ga-mono" datetime="2020-01-12T16:50:00-00.00">
-                2020-01-12
-            </time>
-        </li>
-        
-    </ul>
+            </div>
+        </article>
+        <div id="ga-tags">
+    
+    <span class="ga-tag">
+        <a class="ga-highlight" href="/tag/JS/">#JS</a>
+    </span>
+    
+    <span class="ga-tag">
+        <a class="ga-highlight" href="/tag/javascript/">#javascript</a>
+    </span>
+    
+</div>
+    </section>
+
+    
+<section id="ga-content_pager">
+
+    <div class="next">
+        <h3>没有了</h3>
+        <p class="yue">这是最新的文章</p>
+    </div>
+
+
+    <div class="prev">
+        <a class="ga-highlight" href="/archives/centos7_ss/">CentOS7上安装配置SS</a>
+        <p class="yue">因为最近回归原生评论，所以评论头像如果单纯的引用gravatar头像，会有一部分low bee们头像会变成gravatar默认头像，为了解决这个问题，我想对于qq号@qq.com这样的邮箱地址就行个处理来提取QQ头像，然后问题是怎么获取QQ头像地址。</p>
+    </div>
+
 </section>
 
-<section class="ga-section ga-mono" id="ga-pager">
-    
-    <span>Page 1 of 1</span>
-    
-</section>
 
+    
 
 </main>
 

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/</id><title>人事不干人事</title><updated>2020-01-14T09:12:14.953044+08:06</updated><author><name>小否先生</name><email>pangsuan@qq.com</email></author><link href="/" rel="alternate"/><generator uri="http://lkiesow.github.io/python-feedgen" version="0.8.0">python-feedgen</generator><logo>https://cdn.jsdelivr.net/gh/mhcyong/Blog-With-GitHub-Boilerplate@gh-pages/logo.png</logo><subtitle>只坚持一种正义。我的正义。</subtitle><entry><id>/archives/typography/</id><title>Hello World!</title><updated>2020-01-14T09:12:14.953161+00:00</updated><author><name>AlanDecode</name><email>pangsuan@qq.com</email><uri>https://pangsuan.com</uri></author><content>&lt;div class="notice"&gt;这是一篇示例文章，在这里你可以看到常用页面元素的显示效果，同时也是 Markdown 语法的参考文章。保留或者删除本文，开始自己的创作吧！&lt;/div&gt;&lt;h2&gt;L2 Heading&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/</id><title>人事不干人事</title><updated>2020-01-14T09:21:14.223743+08:06</updated><author><name>小否先生</name><email>pangsuan@qq.com</email></author><link href="/" rel="alternate"/><generator uri="http://lkiesow.github.io/python-feedgen" version="0.8.0">python-feedgen</generator><logo>https://cdn.jsdelivr.net/gh/mhcyong/Blog-With-GitHub-Boilerplate@gh-pages/logo.png</logo><subtitle>只坚持一种正义。我的正义。</subtitle><entry><id>/archives/typography/</id><title>Hello World!</title><updated>2020-01-14T09:21:14.223961+00:00</updated><author><name>AlanDecode</name><email>pangsuan@qq.com</email><uri>https://pangsuan.com</uri></author><content>&lt;div class="notice"&gt;这是一篇示例文章，在这里你可以看到常用页面元素的显示效果，同时也是 Markdown 语法的参考文章。保留或者删除本文，开始自己的创作吧！&lt;/div&gt;&lt;h2&gt;L2 Heading&lt;/h2&gt;
 &lt;h3&gt;L3 Heading&lt;/h3&gt;
 &lt;h4&gt;L4 Heading&lt;/h4&gt;
 &lt;h5&gt;L5 Heading&lt;/h5&gt;
@@ -78,7 +78,7 @@
 &lt;/table&gt;
 &lt;h2&gt;Link Card&lt;/h2&gt;
 &lt;div class="links"&gt;
-&lt;a style="display:block" target="_blank" href="https://www.imalan.cn" class="board-item"&gt;                 &lt;div class="board-thumb"&gt;&lt;img src="https://secure.gravatar.com/avatar/1741a6eef5c824899e347e4afcbaa75d?s=200&amp;r=G&amp;d="&gt;&lt;/div&gt;                 &lt;div class="board-title"&gt;AlanDecode&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;hr&gt;&lt;div class="footnotes"&gt;&lt;ol&gt;&lt;li id="fn_1"&gt;Home page for AlanDecode &lt;a no-style href="#fn_ref_1"&gt;↩&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content><link href="/archives/typography/" rel="alternate"/><published>2019-12-18T16:50:00+08:06</published></entry><entry><id>/archives/get_qq_avatar/</id><title>获取QQ头像地址，并且不暴露QQ号</title><updated>2020-01-14T09:12:14.953134+00:00</updated><author><name>小否先生</name><email>pangsuan@qq.com</email><uri>https://pangsuan.com</uri></author><content>&lt;div class="notice"&gt;因为最近回归原生评论，所以评论头像如果单纯的引用gravatar头像，会有一部分low bee们头像会变成gravatar默认头像，为了解决这个问题，我想对于qq号@qq.com这样的邮箱地址就行个处理来提取QQ头像，然后问题是怎么获取QQ头像地址。&lt;/div&gt;&lt;h2&gt;尝试&lt;/h2&gt;
+&lt;a style="display:block" target="_blank" href="https://www.imalan.cn" class="board-item"&gt;                 &lt;div class="board-thumb"&gt;&lt;img src="https://secure.gravatar.com/avatar/1741a6eef5c824899e347e4afcbaa75d?s=200&amp;r=G&amp;d="&gt;&lt;/div&gt;                 &lt;div class="board-title"&gt;AlanDecode&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;hr&gt;&lt;div class="footnotes"&gt;&lt;ol&gt;&lt;li id="fn_1"&gt;Home page for AlanDecode &lt;a no-style href="#fn_ref_1"&gt;↩&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content><link href="/archives/typography/" rel="alternate"/><published>2019-12-18T16:50:00+08:06</published></entry><entry><id>/archives/get_qq_avatar/</id><title>获取QQ头像地址，并且不暴露QQ号</title><updated>2020-01-14T09:21:14.223926+00:00</updated><author><name>小否先生</name><email>pangsuan@qq.com</email><uri>https://pangsuan.com</uri></author><content>&lt;div class="notice"&gt;因为最近回归原生评论，所以评论头像如果单纯的引用gravatar头像，会有一部分low bee们头像会变成gravatar默认头像，为了解决这个问题，我想对于qq号@qq.com这样的邮箱地址就行个处理来提取QQ头像，然后问题是怎么获取QQ头像地址。&lt;/div&gt;&lt;h2&gt;尝试&lt;/h2&gt;
 &lt;p&gt;最初想到获取QQ头像地址就是下面这样&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;https://q.qlogo.cn/g?b=qq&amp;amp;nk=QQ号码&amp;amp;s=100&lt;/code&gt;&lt;/pre&gt;
@@ -97,7 +97,7 @@ $str2 = explode('&amp;amp;s=', $str1[1]);
 $k = $str2[0];
 $qqimg = 'https://q1.qlogo.cn/g?b=qq&amp;amp;k='.$k.'&amp;amp;s=100';
 echo $qqimg&lt;/code&gt;&lt;/pre&gt;
-</content><link href="/archives/get_qq_avatar/" rel="alternate"/><published>2020-01-12T16:50:00+08:06</published></entry><entry><id>/archives/centos7_ss/</id><title>CentOS7上安装配置SS</title><updated>2020-01-14T09:12:14.953091+00:00</updated><author><name>小否先生</name><email>pangsuan@qq.com</email><uri>https://pangsuan.com</uri></author><content>&lt;div class="notice"&gt;因为最近回归原生评论，所以评论头像如果单纯的引用gravatar头像，会有一部分low bee们头像会变成gravatar默认头像，为了解决这个问题，我想对于qq号@qq.com这样的邮箱地址就行个处理来提取QQ头像，然后问题是怎么获取QQ头像地址。&lt;/div&gt;&lt;p&gt;使用pip安装，分别执行以下命令：&lt;/p&gt;
+</content><link href="/archives/get_qq_avatar/" rel="alternate"/><published>2020-01-12T16:50:00+08:06</published></entry><entry><id>/archives/centos7_ss/</id><title>CentOS7上安装配置SS</title><updated>2020-01-14T09:21:14.223869+00:00</updated><author><name>小否先生</name><email>pangsuan@qq.com</email><uri>https://pangsuan.com</uri></author><content>&lt;div class="notice"&gt;因为最近回归原生评论，所以评论头像如果单纯的引用gravatar头像，会有一部分low bee们头像会变成gravatar默认头像，为了解决这个问题，我想对于qq号@qq.com这样的邮箱地址就行个处理来提取QQ头像，然后问题是怎么获取QQ头像地址。&lt;/div&gt;&lt;p&gt;使用pip安装，分别执行以下命令：&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;yum install m2crypto python-setuptools
 easy_install pip
@@ -122,4 +122,49 @@ your_passwd：替换成自己想设置的密码串&lt;/p&gt;
 保存成功后，启动shadowsocks服务&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;ssserver -c /etc/shadowsocks.json -d start&lt;/code&gt;&lt;/pre&gt;
-</content><link href="/archives/centos7_ss/" rel="alternate"/><published>2020-01-12T17:50:00+08:06</published></entry></feed>
+</content><link href="/archives/centos7_ss/" rel="alternate"/><published>2020-01-12T17:50:00+08:06</published></entry><entry><id>/archives/alert_div_by_js/</id><title>弹出DIV层自适应居中显示</title><updated>2020-01-14T09:21:14.223806+00:00</updated><author><name>小否先生</name><email>pangsuan@qq.com</email><uri>https://pangsuan.com</uri></author><content>&lt;div class="notice"&gt;弹出DIV层自适应居中显示-窗口特效-网页特效。&lt;/div&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;title&amp;gt;弹出DIV层自适应居中显示-窗口特效-网页特效-站长新动力-msxindl.com&amp;lt;/title&amp;gt;
+&amp;lt;meta http-equiv="content-type" content="text/html;charset=gb2312" /&amp;gt;
+&amp;lt;style type="text/css"&amp;gt;
+.opendiv{z-index:100;overflow:auto;position:absolute;padding:1px;border:1px solid #888;background:#fff;border-radius:5px;visibility:hidden;}
+#bgdiv{z-index:99;width:100%;height:100%;position:absolute;top:0;left:0;filter:alpha(opacity=30);-moz-opacity:0.3;opacity:0.3;;visibility:hidden;background:#000;}
+&amp;lt;/style&amp;gt;
+&amp;lt;script type="text/javascript"&amp;gt;
+function $(id){return document.getElementById(id);}
+function openDiv(obj){
+    if(!$(obj)) return false;
+    var b = $('bgdiv');
+    var d = $(obj);
+    b.style.visibility='visible';
+    d.style.visibility='visible';
+    var wd=window.top.document.documentElement.clientWidth-d.offsetWidth;
+    var ht=window.top.document.documentElement.clientHeight-d.offsetHeight;
+    d.style.left=(wd/2)+'px';
+    d.style.top=(ht/2)+'px';
+    window.onresize=function(){openDiv(obj);};
+    b.onclick=function(){closeDiv(obj);window.onresize=null;};  //点击背景关闭弹出层
+}
+//关闭弹出层
+function closeDiv(obj){
+    var b = $('bgdiv');
+    var d = $(obj);
+    b.style.visibility='hidden';
+    d.style.visibility='hidden';
+}
+&amp;lt;/script&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;input type="button" onclick="openDiv('div1')" value="点击弹出层1" /&amp;gt;
+&amp;lt;div id="div1" class="opendiv"&amp;gt;
+    弹出DIV层居中显示，自适应弹出层的高度和宽度，窗口大小改变时也能自适应保持居中&amp;lt;br /&amp;gt;
+    弹出DIV层居中显示，自适应弹出层的高度和宽度，窗口大小改变时也能自适应保持居中&amp;lt;br /&amp;gt;
+    弹出DIV层居中显示，自适应弹出层的高度和宽度，窗口大小改变时也能自适应保持居中&amp;lt;br /&amp;gt;
+    弹出DIV层居中显示，自适应弹出层的高度和宽度，窗口大小改变时也能自适应保持居中&amp;lt;br /&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id="bgdiv"&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+</content><link href="/archives/alert_div_by_js/" rel="alternate"/><published>2020-01-12T17:50:00+08:06</published></entry></feed>

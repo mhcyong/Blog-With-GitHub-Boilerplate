@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>人事不干人事</title><link>/</link><description>只坚持一种正义。我的正义。</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/mhcyong/Blog-With-GitHub-Boilerplate@gh-pages/logo.png</url><title>人事不干人事</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Tue, 14 Jan 2020 09:12:14 +0806</lastBuildDate><pubDate>Tue, 14 Jan 2020 09:12:14 +0806</pubDate><item><title>Hello World!</title><link>/archives/typography/</link><description>&lt;div class="notice"&gt;这是一篇示例文章，在这里你可以看到常用页面元素的显示效果，同时也是 Markdown 语法的参考文章。保留或者删除本文，开始自己的创作吧！&lt;/div&gt;&lt;h2&gt;L2 Heading&lt;/h2&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>人事不干人事</title><link>/</link><description>只坚持一种正义。我的正义。</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/mhcyong/Blog-With-GitHub-Boilerplate@gh-pages/logo.png</url><title>人事不干人事</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Tue, 14 Jan 2020 09:21:14 +0806</lastBuildDate><pubDate>Tue, 14 Jan 2020 09:21:14 +0806</pubDate><item><title>Hello World!</title><link>/archives/typography/</link><description>&lt;div class="notice"&gt;这是一篇示例文章，在这里你可以看到常用页面元素的显示效果，同时也是 Markdown 语法的参考文章。保留或者删除本文，开始自己的创作吧！&lt;/div&gt;&lt;h2&gt;L2 Heading&lt;/h2&gt;
 &lt;h3&gt;L3 Heading&lt;/h3&gt;
 &lt;h4&gt;L4 Heading&lt;/h4&gt;
 &lt;h5&gt;L5 Heading&lt;/h5&gt;
@@ -122,4 +122,49 @@ your_passwd：替换成自己想设置的密码串&lt;/p&gt;
 保存成功后，启动shadowsocks服务&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;ssserver -c /etc/shadowsocks.json -d start&lt;/code&gt;&lt;/pre&gt;
-</description><author>pangsuan@qq.com (小否先生)</author><guid isPermaLink="true">/archives/centos7_ss/</guid><pubDate>Sun, 12 Jan 2020 17:50:00 +0806</pubDate></item></channel></rss>
+</description><author>pangsuan@qq.com (小否先生)</author><guid isPermaLink="true">/archives/centos7_ss/</guid><pubDate>Sun, 12 Jan 2020 17:50:00 +0806</pubDate></item><item><title>弹出DIV层自适应居中显示</title><link>/archives/alert_div_by_js/</link><description>&lt;div class="notice"&gt;弹出DIV层自适应居中显示-窗口特效-网页特效。&lt;/div&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;title&amp;gt;弹出DIV层自适应居中显示-窗口特效-网页特效-站长新动力-msxindl.com&amp;lt;/title&amp;gt;
+&amp;lt;meta http-equiv="content-type" content="text/html;charset=gb2312" /&amp;gt;
+&amp;lt;style type="text/css"&amp;gt;
+.opendiv{z-index:100;overflow:auto;position:absolute;padding:1px;border:1px solid #888;background:#fff;border-radius:5px;visibility:hidden;}
+#bgdiv{z-index:99;width:100%;height:100%;position:absolute;top:0;left:0;filter:alpha(opacity=30);-moz-opacity:0.3;opacity:0.3;;visibility:hidden;background:#000;}
+&amp;lt;/style&amp;gt;
+&amp;lt;script type="text/javascript"&amp;gt;
+function $(id){return document.getElementById(id);}
+function openDiv(obj){
+    if(!$(obj)) return false;
+    var b = $('bgdiv');
+    var d = $(obj);
+    b.style.visibility='visible';
+    d.style.visibility='visible';
+    var wd=window.top.document.documentElement.clientWidth-d.offsetWidth;
+    var ht=window.top.document.documentElement.clientHeight-d.offsetHeight;
+    d.style.left=(wd/2)+'px';
+    d.style.top=(ht/2)+'px';
+    window.onresize=function(){openDiv(obj);};
+    b.onclick=function(){closeDiv(obj);window.onresize=null;};  //点击背景关闭弹出层
+}
+//关闭弹出层
+function closeDiv(obj){
+    var b = $('bgdiv');
+    var d = $(obj);
+    b.style.visibility='hidden';
+    d.style.visibility='hidden';
+}
+&amp;lt;/script&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;input type="button" onclick="openDiv('div1')" value="点击弹出层1" /&amp;gt;
+&amp;lt;div id="div1" class="opendiv"&amp;gt;
+    弹出DIV层居中显示，自适应弹出层的高度和宽度，窗口大小改变时也能自适应保持居中&amp;lt;br /&amp;gt;
+    弹出DIV层居中显示，自适应弹出层的高度和宽度，窗口大小改变时也能自适应保持居中&amp;lt;br /&amp;gt;
+    弹出DIV层居中显示，自适应弹出层的高度和宽度，窗口大小改变时也能自适应保持居中&amp;lt;br /&amp;gt;
+    弹出DIV层居中显示，自适应弹出层的高度和宽度，窗口大小改变时也能自适应保持居中&amp;lt;br /&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div id="bgdiv"&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+</description><author>pangsuan@qq.com (小否先生)</author><guid isPermaLink="true">/archives/alert_div_by_js/</guid><pubDate>Sun, 12 Jan 2020 17:50:00 +0806</pubDate></item></channel></rss>
