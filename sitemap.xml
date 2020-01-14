@@ -12,6 +12,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+    <loc>/archives/php_pdo_mysql/</loc>
+    <lastmod>2020-01-12</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+</url>
+
+<url>
     <loc>/archives/alert_div_by_js/</loc>
     <lastmod>2020-01-12</lastmod>
     <changefreq>always</changefreq>
